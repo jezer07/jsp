@@ -75,11 +75,6 @@
   
   
   %>
-  
-  
-  
-  
-
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -88,7 +83,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Stamps</a>
+          <a class="brand" href="#">Celio</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -102,7 +97,7 @@
 
     <div class="container">
 
-      <h1>Welcome To Stamps</h1>
+      <h1>Welcome To Celio</h1>
       <br/>
       <div id="login">
        <form class="form-signin" method="post" action = "authenticate.jsp">

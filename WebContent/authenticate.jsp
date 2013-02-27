@@ -1,25 +1,20 @@
-<%@ page import = "com.java.*" %>
+<%@page import="org.apache.jasper.tagplugins.jstl.core.Redirect"%>
+<%@ page import="com.java.*"%>
 
 <%
+	String username = request.getParameter("username");
+	String password = request.getParameter("password");
 
-String username = request.getParameter("username");
-String password = request.getParameter("password");
 
+
+String userpass="select * from users where username='"+username+"' AND password=SHA("+"\""+password+"\")";
 ConnectionDB cd =new ConnectionDB("stamps");
 
+boolean test = cd.executeSQL(userpass);
 
-boolean test = cd.executeSQL("select * from users");
+if(test){
 
-if(test)
-{
-	for(int i=0; i<ConnectionDB.data.length;i++){
-		out.println("<br/>id "+ConnectionDB.data[i][0]);
-		out.println("<br/>username "+ConnectionDB.data[i][1]);
-		out.println("<br>password "+ConnectionDB.data[i][2]);
-	}
-	}
-
+	response.sendRedirect("staff/home.jsp");
+	
+}
 %>
-
-
-

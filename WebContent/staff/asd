@@ -1,0 +1,27 @@
+<%@ include file="header.jsp" %>
+
+<script>
+$(document).ready(function(){
+	
+	
+	
+});
+
+
+</script>
+
+
+
+    <div class="container">
+	
+      <h1>Clients</h1>
+      <br/>
+
+	    <div class="row">
+    <div class="span4">asdasd</div>
+    <div class="span8">asdasd</div>
+    </div>
+
+	</div><!-- /container -->
+  
+  <%@ include file="footer.jsp" %>

@@ -29,7 +29,7 @@ public class ConnectionDB {
 			e.printStackTrace();
 			
 		}catch(SQLException e){
-			
+			e.printStackTrace();
 		}
 		
 	}
@@ -41,6 +41,8 @@ public class ConnectionDB {
 		
 		try{
 			result = stmt.executeUpdate(q);
+			
+			
 		}catch(SQLException e){
 			e.printStackTrace();
 			
@@ -76,7 +78,7 @@ public class ConnectionDB {
 			if(rows > 0){
 				test = true;
 				for(int i = 0; i<rows;i++){
-					for(int j = 0;j<rows;j++){
+					for(int j = 0;j<cols;j++){
 						
 						data[i][j] = rs.getString(j+1);
 					}
