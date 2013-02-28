@@ -50,6 +50,22 @@ public class ConnectionDB {
 		return result;
 	}
 	
+	public boolean exe(String q){
+		boolean ret=false;
+		
+			try{
+			 ret=stmt.execute(q);	
+				
+			}catch(SQLException e){
+				e.printStackTrace();
+			}
+			
+		
+		
+		return ret;
+	}
+	
+	
 	public void close()
 	{
 		try{
@@ -89,6 +105,7 @@ public class ConnectionDB {
 			}
 			
 		}catch(SQLException e){
+		
 			e.printStackTrace();
 			
 		}

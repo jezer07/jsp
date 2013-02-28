@@ -83,20 +83,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Celio</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+          
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container">
-
+    <div class="container offset3">
+	
+	<div class="span6">
       <h1>Welcome To Celio</h1>
       <br/>
       <div id="login">
@@ -109,6 +104,8 @@
         </label>
         <button class="btn btn-large btn-primary" type="submit">Sign in</button>
       </form>
+    
+      </div>
     </div> <!-- /container -->
 	</div>
     <!-- Le javascript

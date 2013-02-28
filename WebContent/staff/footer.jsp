@@ -9,7 +9,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../Bootstrap,%20from%20Twitter_files/jquery.js"></script>
+    
     <script src="../Bootstrap,%20from%20Twitter_files/bootstrap-transition.js"></script>
     <script src="../Bootstrap,%20from%20Twitter_files/bootstrap-alert.js"></script>
     <script src="../Bootstrap,%20from%20Twitter_files/bootstrap-modal.js"></script>

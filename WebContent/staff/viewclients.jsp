@@ -31,9 +31,9 @@ boolean testClient = db.executeSQL(selClient);
   
            <div class="span9">
           
-         <div class="well"> 
-          <table class="table table-striped table-hover table-bordered">
-     <caption>Client</caption>
+         <div class="well container-fluid"> 
+          <table id="dt">
+
           <thead>
           	<tr>
           		<th>#</th>
@@ -47,9 +47,9 @@ boolean testClient = db.executeSQL(selClient);
           <tbody>
           <%
           if(testClient){
-        	  
+        	  int ctr=1;
           	for(int i=0;i<ConnectionDB.data.length;i++){
-          		int ctr=1;
+          		
           		out.print("<tr>");
           		out.print("<td>"+ctr+"</td>");
           		for(int j=0;j<ConnectionDB.data[i].length;j++){

@@ -13,8 +13,11 @@ ConnectionDB cd =new ConnectionDB("stamps");
 boolean test = cd.executeSQL(userpass);
 
 if(test){
-
-	response.sendRedirect("staff/home.jsp");
 	
+	session.setAttribute("username", ConnectionDB.data[0][1]);
+	session.setAttribute("id", ConnectionDB.data[0][0]);
+	session.setAttribute("firstname", ConnectionDB.data[0][4]);
+	session.setAttribute("lastname", ConnectionDB.data[0][6]);
+	response.sendRedirect("staff/home.jsp");
 }
 %>
